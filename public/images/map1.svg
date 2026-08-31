@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 140" shape-rendering="crispEdges">
+  <rect width="200" height="140" fill="#241b3a"/>
+  <rect x="0" y="0" width="200" height="90" fill="#2c2150"/>
+  <rect x="160" y="14" width="20" height="20" fill="#FFD166"/>
+  <rect x="0" y="90" width="200" height="50" fill="#141c14"/>
+  <rect x="0" y="90" width="200" height="6" fill="#1c261c"/>
+
+  <!-- pohon belakang (gelap) -->
+  <polygon points="20,90 40,40 60,90" fill="#1f3a24"/>
+  <rect x="35" y="90" width="10" height="16" fill="#3a2a1a"/>
+  <polygon points="80,90 100,30 120,90" fill="#1f3a24"/>
+  <rect x="95" y="90" width="10" height="16" fill="#3a2a1a"/>
+  <polygon points="140,90 158,42 176,90" fill="#1f3a24"/>
+  <rect x="153" y="90" width="10" height="16" fill="#3a2a1a"/>
+
+  <!-- pohon depan (terang) -->
+  <polygon points="0,100 22,50 44,100" fill="#2F7A46"/>
+  <rect x="16" y="100" width="12" height="18" fill="#4a341f"/>
+  <polygon points="90,110 116,48 142,110" fill="#3FA35D"/>
+  <rect x="108" y="110" width="16" height="20" fill="#4a341f"/>
+  <polygon points="160,105 182,55 200,105" fill="#2F7A46"/>
+  <rect x="175" y="105" width="12" height="18" fill="#4a341f"/>
+
+  <!-- kunang-kunang -->
+  <rect x="60" y="80" width="4" height="4" fill="#5EEAD4"/>
+  <rect x="130" y="70" width="4" height="4" fill="#5EEAD4"/>
+  <rect x="150" y="95" width="4" height="4" fill="#5EEAD4"/>
+  <rect x="45" y="100" width="4" height="4" fill="#FF6B81"/>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 140" shape-rendering="crispEdges">
+  <rect width="200" height="140" fill="#1c1c33"/>
+
+  <!-- dinding bata -->
+  <g fill="#33334f">
+    <rect x="0" y="0" width="200" height="100"/>
+  </g>
+  <g fill="#2a2a45" opacity="0.9">
+    <rect x="0" y="0" width="30" height="14"/><rect x="34" y="0" width="30" height="14"/>
+    <rect x="68" y="0" width="30" height="14"/><rect x="102" y="0" width="30" height="14"/>
+    <rect x="136" y="0" width="30" height="14"/><rect x="170" y="0" width="30" height="14"/>
+    <rect x="16" y="18" width="30" height="14"/><rect x="50" y="18" width="30" height="14"/>
+    <rect x="84" y="18" width="30" height="14"/><rect x="118" y="18" width="30" height="14"/>
+    <rect x="152" y="18" width="30" height="14"/>
+    <rect x="0" y="36" width="30" height="14"/><rect x="34" y="36" width="30" height="14"/>
+    <rect x="68" y="36" width="30" height="14"/><rect x="102" y="36" width="30" height="14"/>
+    <rect x="136" y="36" width="30" height="14"/><rect x="170" y="36" width="30" height="14"/>
+    <rect x="16" y="54" width="30" height="14"/><rect x="50" y="54" width="30" height="14"/>
+    <rect x="84" y="54" width="30" height="14"/><rect x="118" y="54" width="30" height="14"/>
+    <rect x="152" y="54" width="30" height="14"/>
+    <rect x="0" y="72" width="30" height="14"/><rect x="34" y="72" width="30" height="14"/>
+    <rect x="68" y="72" width="30" height="14"/><rect x="102" y="72" width="30" height="14"/>
+    <rect x="136" y="72" width="30" height="14"/><rect x="170" y="72" width="30" height="14"/>
+  </g>
+
+  <!-- pintu gerbang -->
+  <rect x="78" y="30" width="44" height="70" fill="#111122"/>
+  <rect x="78" y="30" width="44" height="6" fill="#0a0a16"/>
+
+  <!-- tangga turun -->
+  <rect x="70" y="100" width="60" height="8" fill="#4A4A7A"/>
+  <rect x="78" y="108" width="44" height="8" fill="#3a3a63"/>
+  <rect x="86" y="116" width="28" height="8" fill="#2c2c52"/>
+  <rect x="94" y="124" width="12" height="16" fill="#1c1c3a"/>
+
+  <!-- obor -->
+  <rect x="20" y="46" width="6" height="20" fill="#5c3a1e"/>
+  <polygon points="16,46 30,46 23,26" fill="#FFD166"/>
+  <polygon points="19,42 27,42 23,30" fill="#FF6B81"/>
+
+  <rect x="174" y="46" width="6" height="20" fill="#5c3a1e"/>
+  <polygon points="170,46 184,46 177,26" fill="#FFD166"/>
+  <polygon points="173,42 181,42 177,30" fill="#FF6B81"/>
+
+  <!-- lantai -->
+  <rect x="0" y="126" width="200" height="14" fill="#141422"/>
+</svg>
