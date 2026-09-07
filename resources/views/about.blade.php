@@ -4,10 +4,10 @@
 
 @section('content')
 <div class="max-w-2xl">
-    <p class="pixel-tag mb-3" style="color: var(--gold);">CHARACTER INFO</p>
-    <h1 class="font-pixel text-xl md:text-2xl mb-10" style="color: var(--ink);">Tentang Saya</h1>
+    <p class="tag mb-2" style="color: var(--accent-3);">TENTANG SAYA</p>
+    <h1 class="font-display text-2xl md:text-3xl font-semibold mb-10" style="color: var(--ink);">Kenalan Yuk</h1>
 
-    <div class="pixel-frame p-8 space-y-4 text-lg leading-relaxed" style="color: var(--ink-soft);">
+    <div class="card p-8 space-y-4 text-[15px] leading-relaxed" style="color: var(--ink-soft);">
         <p>
             Halo, saya Rakha. Saya bikin map, tileset, dan level design 2D buat
             game indie. Buat saya, map bukan cuma latar belakang — map itu bagian

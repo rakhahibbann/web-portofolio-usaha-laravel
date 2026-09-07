@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 140" shape-rendering="crispEdges">
+  <rect width="200" height="140" fill="#161d2b"/>
+  <rect width="200" height="140" fill="#1d2740"/>
+
+  <!-- dinding gua -->
+  <polygon points="0,0 0,60 24,40 40,58 60,18 78,44 100,10 120,42 140,20 160,50 180,26 200,46 200,0" fill="#101725"/>
+  <polygon points="0,140 0,100 20,118 38,92 56,120 80,96 100,124 124,98 144,122 168,100 200,116 200,140" fill="#101725"/>
+
+  <!-- lantai gua -->
+  <rect x="0" y="112" width="200" height="28" fill="#1a2438"/>
+
+  <!-- kristal biru -->
+  <polygon points="52,112 60,80 68,112" fill="#5EC8F2"/>
+  <polygon points="56,112 60,92 64,112" fill="#B6E7FB"/>
+  <polygon points="140,112 148,86 156,112" fill="#5EC8F2"/>
+  <polygon points="144,112 148,96 152,112" fill="#B6E7FB"/>
+
+  <!-- kristal ungu kecil -->
+  <polygon points="22,112 27,94 32,112" fill="#8B7CF2"/>
+  <polygon points="168,112 173,96 178,112" fill="#8B7CF2"/>
+  <polygon points="96,112 101,98 106,112" fill="#8B7CF2"/>
+
+  <!-- cahaya pijar -->
+  <rect x="58" y="70" width="4" height="4" fill="#CFF3FF"/>
+  <rect x="146" y="78" width="4" height="4" fill="#CFF3FF"/>
+  <rect x="99" y="88" width="4" height="4" fill="#E4DEFF"/>
+
+  <!-- jalur setapak -->
+  <rect x="88" y="120" width="24" height="6" fill="#2a3654"/>
+  <rect x="94" y="126" width="12" height="6" fill="#25304c"/>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 140" shape-rendering="crispEdges">
+  <rect width="200" height="140" fill="#1c2a3a"/>
+  <rect width="200" height="70" fill="#24384c"/>
+  <rect x="150" y="12" width="20" height="20" fill="#F2C744"/>
+
+  <!-- awan -->
+  <rect x="20" y="20" width="24" height="8" fill="#33475e"/>
+  <rect x="26" y="14" width="16" height="8" fill="#33475e"/>
+  <rect x="70" y="30" width="20" height="7" fill="#33475e"/>
+
+  <!-- padang rumput bertingkat -->
+  <rect x="0" y="70" width="200" height="70" fill="#3d7a4f"/>
+  <rect x="0" y="70" width="200" height="8" fill="#4c9760"/>
+  <rect x="0" y="96" width="200" height="44" fill="#336a43"/>
+  <rect x="0" y="96" width="200" height="6" fill="#2c5c3a"/>
+
+  <!-- batu -->
+  <rect x="30" y="102" width="16" height="10" fill="#5a5f52"/>
+  <rect x="26" y="108" width="24" height="8" fill="#4a4f44"/>
+  <rect x="150" y="112" width="14" height="9" fill="#5a5f52"/>
+
+  <!-- pohon tunggal -->
+  <rect x="118" y="60" width="8" height="20" fill="#5c3a1e"/>
+  <polygon points="98,60 122,14 146,60" fill="#3d7a4f"/>
+  <polygon points="104,52 122,22 140,52" fill="#4c9760"/>
+
+  <!-- rumput kecil -->
+  <g fill="#4c9760">
+    <rect x="60" y="118" width="4" height="8"/><rect x="66" y="122" width="4" height="8"/>
+    <rect x="176" y="100" width="4" height="8"/><rect x="182" y="104" width="4" height="8"/>
+    <rect x="8" y="126" width="4" height="8"/><rect x="14" y="122" width="4" height="8"/>
+  </g>
+
+  <!-- bunga -->
+  <rect x="86" y="120" width="4" height="4" fill="#F2C744"/>
+  <rect x="160" y="126" width="4" height="4" fill="#E8734A"/>
+  <rect x="46" y="130" width="4" height="4" fill="#F2C744"/>
+</svg>

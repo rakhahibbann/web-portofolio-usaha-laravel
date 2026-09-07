@@ -6,89 +6,88 @@
     <title>@yield('title', 'Rakha Map Design') | Jasa Desain Map Game 2D</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root {
-            --bg: #16162C;
-            --panel: #1F1F3D;
-            --border: #4A4A7A;
-            --ink: #E9E9F7;
-            --ink-soft: #A5A5CC;
-            --mint: #5EEAD4;
-            --coral: #FF6B81;
-            --gold: #FFD166;
+            --bg: #0E1015;
+            --panel: #15171F;
+            --panel-soft: #1B1E28;
+            --border: #262A36;
+            --ink: #F2F3F6;
+            --ink-soft: #9BA1AF;
+            --accent: #6C63F2;
+            --accent-soft: #C9C5FB;
+            --accent-2: #34C29B;
+            --accent-3: #E8A23D;
         }
 
         body {
             background-color: var(--bg);
             color: var(--ink);
-            font-family: 'VT323', monospace;
-            font-size: 20px;
-            background-image:
-                repeating-linear-gradient(0deg, rgba(255,255,255,0.025) 0px, rgba(255,255,255,0.025) 1px, transparent 1px, transparent 4px);
+            font-family: 'Inter', sans-serif;
         }
 
-        .font-pixel {
-            font-family: 'Press Start 2P', monospace;
-            line-height: 1.7;
+        .font-display {
+            font-family: 'Space Grotesk', sans-serif;
         }
 
-        .pixel-frame {
-            --p: 8px;
-            clip-path: polygon(
-                0 var(--p), var(--p) var(--p), var(--p) 0,
-                calc(100% - var(--p)) 0, calc(100% - var(--p)) var(--p), 100% var(--p),
-                100% calc(100% - var(--p)), calc(100% - var(--p)) calc(100% - var(--p)), calc(100% - var(--p)) 100%,
-                var(--p) 100%, var(--p) calc(100% - var(--p)), 0 calc(100% - var(--p))
-            );
-            box-shadow: inset 0 0 0 3px var(--border);
+        .card {
             background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            transition: border-color 0.15s ease, transform 0.15s ease;
+        }
+        .card-hover:hover {
+            border-color: var(--accent);
+            transform: translateY(-3px);
         }
 
-        .pixel-btn {
-            font-family: 'Press Start 2P', monospace;
-            font-size: 13px;
-            color: var(--bg);
-            background: var(--mint);
-            box-shadow: inset 0 0 0 3px #0f766e, 0 5px 0 0 #0f766e;
-            transition: transform 0.08s ease, box-shadow 0.08s ease;
+        .btn-primary {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+            background: var(--accent);
+            color: #ffffff;
+            border-radius: 0.75rem;
+            transition: transform 0.15s ease, background 0.15s ease;
         }
-        .pixel-btn:active {
-            transform: translateY(5px);
-            box-shadow: inset 0 0 0 3px #0f766e, 0 0 0 0 #0f766e;
+        .btn-primary:hover {
+            background: #7d75f5;
+            transform: translateY(-2px);
         }
 
-        .pixel-tag {
-            font-family: 'Press Start 2P', monospace;
-            font-size: 10px;
+        .tag {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.03em;
         }
     </style>
 </head>
 <body>
 
     {{-- NAVBAR --}}
-    <nav class="border-b-4" style="border-color: var(--border); background: var(--panel);">
+    <nav class="border-b" style="border-color: var(--border); background: var(--panel);">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="{{ url('/') }}" class="flex items-center gap-3">
-                <svg width="30" height="30" viewBox="0 0 10 10" shape-rendering="crispEdges">
-                    <rect x="4" y="0" width="2" height="2" fill="#FFD166"/>
-                    <rect x="2" y="2" width="2" height="2" fill="#FFD166"/>
-                    <rect x="6" y="2" width="2" height="2" fill="#FFD166"/>
-                    <rect x="0" y="4" width="2" height="2" fill="#5EEAD4"/>
-                    <rect x="4" y="4" width="2" height="2" fill="#5EEAD4"/>
-                    <rect x="8" y="4" width="2" height="2" fill="#5EEAD4"/>
-                    <rect x="2" y="6" width="2" height="2" fill="#FF6B81"/>
-                    <rect x="6" y="6" width="2" height="2" fill="#FF6B81"/>
-                    <rect x="4" y="8" width="2" height="2" fill="#E9E9F7"/>
+                <svg width="28" height="28" viewBox="0 0 10 10" shape-rendering="crispEdges">
+                    <rect x="4" y="0" width="2" height="2" fill="#E8A23D"/>
+                    <rect x="2" y="2" width="2" height="2" fill="#E8A23D"/>
+                    <rect x="6" y="2" width="2" height="2" fill="#E8A23D"/>
+                    <rect x="0" y="4" width="2" height="2" fill="#34C29B"/>
+                    <rect x="4" y="4" width="2" height="2" fill="#34C29B"/>
+                    <rect x="8" y="4" width="2" height="2" fill="#34C29B"/>
+                    <rect x="2" y="6" width="2" height="2" fill="#6C63F2"/>
+                    <rect x="6" y="6" width="2" height="2" fill="#6C63F2"/>
+                    <rect x="4" y="8" width="2" height="2" fill="#F2F3F6"/>
                 </svg>
-                <span class="font-pixel text-xs" style="color: var(--gold);">RAKHA MAP DESIGN</span>
+                <span class="font-display font-semibold text-sm tracking-tight" style="color: var(--ink);">Rakha Map Design</span>
             </a>
-            <div class="hidden sm:flex gap-6 font-pixel text-[10px]" style="color: var(--ink-soft);">
-                <a href="{{ url('/') }}" class="hover:text-[var(--mint)]">HOME</a>
-                <a href="{{ url('/portfolio') }}" class="hover:text-[var(--mint)]">PORTFOLIO</a>
-                <a href="{{ url('/about') }}" class="hover:text-[var(--mint)]">ABOUT</a>
-                <a href="{{ url('/contact') }}" class="hover:text-[var(--mint)]">CONTACT</a>
+            <div class="hidden sm:flex gap-8 text-sm font-medium" style="color: var(--ink-soft);">
+                <a href="{{ url('/') }}" class="hover:text-white transition-colors">Home</a>
+                <a href="{{ url('/portfolio') }}" class="hover:text-white transition-colors">Portfolio</a>
+                <a href="{{ url('/about') }}" class="hover:text-white transition-colors">About</a>
+                <a href="{{ url('/contact') }}" class="hover:text-white transition-colors">Contact</a>
             </div>
         </div>
     </nav>
@@ -99,11 +98,12 @@
     </main>
 
     {{-- FOOTER --}}
-    <footer class="mt-20 py-8 border-t-4" style="border-color: var(--border); background: var(--panel);">
-        <p class="text-center font-pixel text-[10px]" style="color: var(--ink-soft);">
-            © {{ date('Y') }} RAKHA MAP DESIGN
+    <footer class="mt-20 py-8 border-t" style="border-color: var(--border); background: var(--panel);">
+        <p class="text-center text-sm" style="color: var(--ink-soft);">
+            © {{ date('Y') }} Rakha Map Design
         </p>
     </footer>
+
 
 </body>
 </html>
